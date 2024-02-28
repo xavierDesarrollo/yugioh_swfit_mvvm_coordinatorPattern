@@ -14,6 +14,8 @@ Swift: 5.0
 iOS: 17.0
 
 User Interface:
-This app shows a list of all cards from api, you can filter by three archetypes and you see each card detail. The list shows cards with background depends type card, monster, spell and trap.
+This app shows a list of all cards from api, you can filter by three archetypes and you see each card detail. A list shows cards with different background color depends type card, monster, spell and trap.
+
+The architecture is the most important of this app.
 
 Enjoy it.
