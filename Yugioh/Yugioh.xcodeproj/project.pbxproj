@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0C6FE7C2B8EB431002E8B2D /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6FE7B2B8EB431002E8B2D /* CardDetailViewController.swift */; };
+		F0C6FE7E2B8EB4A0002E8B2D /* CardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6FE7D2B8EB4A0002E8B2D /* CardDetailViewModel.swift */; };
+		F0DADE572B8E39DB0080CE0E /* YugiohTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE562B8E39DB0080CE0E /* YugiohTests.swift */; };
+		F0DADE612B8E39DB0080CE0E /* YugiohUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE602B8E39DB0080CE0E /* YugiohUITests.swift */; };
+		F0DADE632B8E39DB0080CE0E /* YugiohUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE622B8E39DB0080CE0E /* YugiohUITestsLaunchTests.swift */; };
+		F0DADEB42B8E3BB80080CE0E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE872B8E3BB70080CE0E /* AppCoordinator.swift */; };
+		F0DADEB72B8E3BB80080CE0E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE8A2B8E3BB70080CE0E /* Coordinator.swift */; };
+		F0DADEB82B8E3BB80080CE0E /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE8C2B8E3BB70080CE0E /* CardService.swift */; };
+		F0DADEB92B8E3BB80080CE0E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE8F2B8E3BB70080CE0E /* ViewState.swift */; };
+		F0DADEBA2B8E3BB80080CE0E /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE922B8E3BB70080CE0E /* UIColor+Additions.swift */; };
+		F0DADEBB2B8E3BB80080CE0E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE932B8E3BB70080CE0E /* UITableView.swift */; };
+		F0DADEBC2B8E3BB80080CE0E /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE942B8E3BB70080CE0E /* UITableViewCell.swift */; };
+		F0DADEBD2B8E3BB80080CE0E /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE952B8E3BB70080CE0E /* CustomError.swift */; };
+		F0DADEBE2B8E3BB80080CE0E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE972B8E3BB70080CE0E /* Reachability.swift */; };
+		F0DADEBF2B8E3BB80080CE0E /* RequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADE982B8E3BB70080CE0E /* RequestDelegate.swift */; };
+		F0DADEC02B8E3BB80080CE0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DADE9B2B8E3BB70080CE0E /* LaunchScreen.storyboard */; };
+		F0DADEC12B8E3BB80080CE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DADE9E2B8E3BB70080CE0E /* Assets.xcassets */; };
+		F0DADEC62B8E3BB80080CE0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADEA52B8E3BB70080CE0E /* AppDelegate.swift */; };
+		F0DADEC72B8E3BB80080CE0E /* CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADEA72B8E3BB80080CE0E /* CardModels.swift */; };
+		F0DADEC82B8E3BB80080CE0E /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADEAB2B8E3BB80080CE0E /* CardListCell.swift */; };
+		F0DADEC92B8E3BB80080CE0E /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADEAE2B8E3BB80080CE0E /* CardsViewModel.swift */; };
+		F0DADECA2B8E3BB80080CE0E /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADEAF2B8E3BB80080CE0E /* CardsViewController.swift */; };
+		F0DADECC2B8E3BB80080CE0E /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DADEB22B8E3BB80080CE0E /* AppController.swift */; };
+		F0DADED12B8E448C0080CE0E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F0DADED02B8E448C0080CE0E /* Kingfisher */; };
+		F0DADED42B8E44CE0080CE0E /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F0DADED32B8E44CE0080CE0E /* ProgressHUD */; };
+		F0DADED72B8E45060080CE0E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0DADED62B8E45060080CE0E /* SnapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0DADE532B8E39DB0080CE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0DADE342B8E39DA0080CE0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0DADE3B2B8E39DA0080CE0E;
+			remoteInfo = Yugioh;
+		};
+		F0DADE5D2B8E39DB0080CE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0DADE342B8E39DA0080CE0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0DADE3B2B8E39DA0080CE0E;
+			remoteInfo = Yugioh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0C6FE7B2B8EB431002E8B2D /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		F0C6FE7D2B8EB4A0002E8B2D /* CardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewModel.swift; sourceTree = "<group>"; };
+		F0DADE3C2B8E39DA0080CE0E /* Yugioh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yugioh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DADE522B8E39DB0080CE0E /* YugiohTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YugiohTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DADE562B8E39DB0080CE0E /* YugiohTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiohTests.swift; sourceTree = "<group>"; };
+		F0DADE5C2B8E39DB0080CE0E /* YugiohUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YugiohUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DADE602B8E39DB0080CE0E /* YugiohUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiohUITests.swift; sourceTree = "<group>"; };
+		F0DADE622B8E39DB0080CE0E /* YugiohUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YugiohUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0DADE872B8E3BB70080CE0E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F0DADE8A2B8E3BB70080CE0E /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F0DADE8C2B8E3BB70080CE0E /* CardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		F0DADE8F2B8E3BB70080CE0E /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		F0DADE922B8E3BB70080CE0E /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		F0DADE932B8E3BB70080CE0E /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		F0DADE942B8E3BB70080CE0E /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		F0DADE952B8E3BB70080CE0E /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		F0DADE972B8E3BB70080CE0E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F0DADE982B8E3BB70080CE0E /* RequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDelegate.swift; sourceTree = "<group>"; };
+		F0DADE9C2B8E3BB70080CE0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0DADE9E2B8E3BB70080CE0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0DADEA52B8E3BB70080CE0E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0DADEA72B8E3BB80080CE0E /* CardModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModels.swift; sourceTree = "<group>"; };
+		F0DADEAB2B8E3BB80080CE0E /* CardListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		F0DADEAE2B8E3BB80080CE0E /* CardsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		F0DADEAF2B8E3BB80080CE0E /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		F0DADEB22B8E3BB80080CE0E /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		F0DADED82B8E46CF0080CE0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0DADE392B8E39DA0080CE0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DADED72B8E45060080CE0E /* SnapKit in Frameworks */,
+				F0DADED12B8E448C0080CE0E /* Kingfisher in Frameworks */,
+				F0DADED42B8E44CE0080CE0E /* ProgressHUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DADE4F2B8E39DB0080CE0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DADE592B8E39DB0080CE0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0C6FE7A2B8EB401002E8B2D /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F0C6FE7B2B8EB431002E8B2D /* CardDetailViewController.swift */,
+				F0C6FE7D2B8EB4A0002E8B2D /* CardDetailViewModel.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		F0DADE332B8E39DA0080CE0E = {
+			isa = PBXGroup;
+			children = (
+				F0DADE3E2B8E39DA0080CE0E /* Yugioh */,
+				F0DADE552B8E39DB0080CE0E /* YugiohTests */,
+				F0DADE5F2B8E39DB0080CE0E /* YugiohUITests */,
+				F0DADE3D2B8E39DA0080CE0E /* Products */,
+				F0DADED52B8E45060080CE0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0DADE3D2B8E39DA0080CE0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE3C2B8E39DA0080CE0E /* Yugioh.app */,
+				F0DADE522B8E39DB0080CE0E /* YugiohTests.xctest */,
+				F0DADE5C2B8E39DB0080CE0E /* YugiohUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0DADE3E2B8E39DA0080CE0E /* Yugioh */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADED82B8E46CF0080CE0E /* Info.plist */,
+				F0DADE862B8E3BB70080CE0E /* Coordinators */,
+				F0DADEA42B8E3BB70080CE0E /* Core */,
+				F0DADEA62B8E3BB80080CE0E /* Models */,
+				F0DADE992B8E3BB70080CE0E /* Resources */,
+				F0DADE8B2B8E3BB70080CE0E /* Services */,
+				F0DADE8D2B8E3BB70080CE0E /* Utils */,
+				F0DADEA82B8E3BB80080CE0E /* View */,
+				F0DADEAC2B8E3BB80080CE0E /* View Controllers */,
+			);
+			path = Yugioh;
+			sourceTree = "<group>";
+		};
+		F0DADE552B8E39DB0080CE0E /* YugiohTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE562B8E39DB0080CE0E /* YugiohTests.swift */,
+			);
+			path = YugiohTests;
+			sourceTree = "<group>";
+		};
+		F0DADE5F2B8E39DB0080CE0E /* YugiohUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE602B8E39DB0080CE0E /* YugiohUITests.swift */,
+				F0DADE622B8E39DB0080CE0E /* YugiohUITestsLaunchTests.swift */,
+			);
+			path = YugiohUITests;
+			sourceTree = "<group>";
+		};
+		F0DADE862B8E3BB70080CE0E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE872B8E3BB70080CE0E /* AppCoordinator.swift */,
+				F0DADE8A2B8E3BB70080CE0E /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F0DADE8B2B8E3BB70080CE0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE8C2B8E3BB70080CE0E /* CardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F0DADE8D2B8E3BB70080CE0E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE8E2B8E3BB70080CE0E /* State */,
+				F0DADE902B8E3BB70080CE0E /* Extensions */,
+				F0DADE952B8E3BB70080CE0E /* CustomError.swift */,
+				F0DADE962B8E3BB70080CE0E /* Helpers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F0DADE8E2B8E3BB70080CE0E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE8F2B8E3BB70080CE0E /* ViewState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		F0DADE902B8E3BB70080CE0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE912B8E3BB70080CE0E /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F0DADE912B8E3BB70080CE0E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE922B8E3BB70080CE0E /* UIColor+Additions.swift */,
+				F0DADE932B8E3BB70080CE0E /* UITableView.swift */,
+				F0DADE942B8E3BB70080CE0E /* UITableViewCell.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F0DADE962B8E3BB70080CE0E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE972B8E3BB70080CE0E /* Reachability.swift */,
+				F0DADE982B8E3BB70080CE0E /* RequestDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F0DADE992B8E3BB70080CE0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE9A2B8E3BB70080CE0E /* Storyboards */,
+				F0DADE9D2B8E3BB70080CE0E /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0DADE9A2B8E3BB70080CE0E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE9B2B8E3BB70080CE0E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F0DADE9D2B8E3BB70080CE0E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADE9E2B8E3BB70080CE0E /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F0DADEA42B8E3BB70080CE0E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEA52B8E3BB70080CE0E /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F0DADEA62B8E3BB80080CE0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEA72B8E3BB80080CE0E /* CardModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0DADEA82B8E3BB80080CE0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEA92B8E3BB80080CE0E /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0DADEA92B8E3BB80080CE0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEAA2B8E3BB80080CE0E /* Cards */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F0DADEAA2B8E3BB80080CE0E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEAB2B8E3BB80080CE0E /* CardListCell.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		F0DADEAC2B8E3BB80080CE0E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0C6FE7A2B8EB401002E8B2D /* CardDetail */,
+				F0DADEAD2B8E3BB80080CE0E /* Cards */,
+				F0DADEB02B8E3BB80080CE0E /* Commum */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F0DADEAD2B8E3BB80080CE0E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEAE2B8E3BB80080CE0E /* CardsViewModel.swift */,
+				F0DADEAF2B8E3BB80080CE0E /* CardsViewController.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		F0DADEB02B8E3BB80080CE0E /* Commum */ = {
+			isa = PBXGroup;
+			children = (
+				F0DADEB22B8E3BB80080CE0E /* AppController.swift */,
+			);
+			path = Commum;
+			sourceTree = "<group>";
+		};
+		F0DADED52B8E45060080CE0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0DADE3B2B8E39DA0080CE0E /* Yugioh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0DADE662B8E39DB0080CE0E /* Build configuration list for PBXNativeTarget "Yugioh" */;
+			buildPhases = (
+				F0DADE382B8E39DA0080CE0E /* Sources */,
+				F0DADE392B8E39DA0080CE0E /* Frameworks */,
+				F0DADE3A2B8E39DA0080CE0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yugioh;
+			packageProductDependencies = (
+				F0DADED02B8E448C0080CE0E /* Kingfisher */,
+				F0DADED32B8E44CE0080CE0E /* ProgressHUD */,
+				F0DADED62B8E45060080CE0E /* SnapKit */,
+			);
+			productName = Yugioh;
+			productReference = F0DADE3C2B8E39DA0080CE0E /* Yugioh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0DADE512B8E39DB0080CE0E /* YugiohTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0DADE692B8E39DB0080CE0E /* Build configuration list for PBXNativeTarget "YugiohTests" */;
+			buildPhases = (
+				F0DADE4E2B8E39DB0080CE0E /* Sources */,
+				F0DADE4F2B8E39DB0080CE0E /* Frameworks */,
+				F0DADE502B8E39DB0080CE0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0DADE542B8E39DB0080CE0E /* PBXTargetDependency */,
+			);
+			name = YugiohTests;
+			productName = YugiohTests;
+			productReference = F0DADE522B8E39DB0080CE0E /* YugiohTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0DADE5B2B8E39DB0080CE0E /* YugiohUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0DADE6C2B8E39DB0080CE0E /* Build configuration list for PBXNativeTarget "YugiohUITests" */;
+			buildPhases = (
+				F0DADE582B8E39DB0080CE0E /* Sources */,
+				F0DADE592B8E39DB0080CE0E /* Frameworks */,
+				F0DADE5A2B8E39DB0080CE0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0DADE5E2B8E39DB0080CE0E /* PBXTargetDependency */,
+			);
+			name = YugiohUITests;
+			productName = YugiohUITests;
+			productReference = F0DADE5C2B8E39DB0080CE0E /* YugiohUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0DADE342B8E39DA0080CE0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F0DADE3B2B8E39DA0080CE0E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F0DADE512B8E39DB0080CE0E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F0DADE3B2B8E39DA0080CE0E;
+					};
+					F0DADE5B2B8E39DB0080CE0E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F0DADE3B2B8E39DA0080CE0E;
+					};
+				};
+			};
+			buildConfigurationList = F0DADE372B8E39DA0080CE0E /* Build configuration list for PBXProject "Yugioh" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0DADE332B8E39DA0080CE0E;
+			packageReferences = (
+				F0DADECE2B8E44150080CE0E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F0DADECF2B8E448C0080CE0E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F0DADED22B8E44CE0080CE0E /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+			);
+			productRefGroup = F0DADE3D2B8E39DA0080CE0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0DADE3B2B8E39DA0080CE0E /* Yugioh */,
+				F0DADE512B8E39DB0080CE0E /* YugiohTests */,
+				F0DADE5B2B8E39DB0080CE0E /* YugiohUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0DADE3A2B8E39DA0080CE0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DADEC12B8E3BB80080CE0E /* Assets.xcassets in Resources */,
+				F0DADEC02B8E3BB80080CE0E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DADE502B8E39DB0080CE0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DADE5A2B8E39DB0080CE0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0DADE382B8E39DA0080CE0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DADEC92B8E3BB80080CE0E /* CardsViewModel.swift in Sources */,
+				F0C6FE7E2B8EB4A0002E8B2D /* CardDetailViewModel.swift in Sources */,
+				F0DADEBC2B8E3BB80080CE0E /* UITableViewCell.swift in Sources */,
+				F0DADEB72B8E3BB80080CE0E /* Coordinator.swift in Sources */,
+				F0DADEB82B8E3BB80080CE0E /* CardService.swift in Sources */,
+				F0DADEC82B8E3BB80080CE0E /* CardListCell.swift in Sources */,
+				F0DADECA2B8E3BB80080CE0E /* CardsViewController.swift in Sources */,
+				F0DADEB92B8E3BB80080CE0E /* ViewState.swift in Sources */,
+				F0DADEC62B8E3BB80080CE0E /* AppDelegate.swift in Sources */,
+				F0DADEBF2B8E3BB80080CE0E /* RequestDelegate.swift in Sources */,
+				F0DADEB42B8E3BB80080CE0E /* AppCoordinator.swift in Sources */,
+				F0DADECC2B8E3BB80080CE0E /* AppController.swift in Sources */,
+				F0DADEC72B8E3BB80080CE0E /* CardModels.swift in Sources */,
+				F0C6FE7C2B8EB431002E8B2D /* CardDetailViewController.swift in Sources */,
+				F0DADEBD2B8E3BB80080CE0E /* CustomError.swift in Sources */,
+				F0DADEBE2B8E3BB80080CE0E /* Reachability.swift in Sources */,
+				F0DADEBB2B8E3BB80080CE0E /* UITableView.swift in Sources */,
+				F0DADEBA2B8E3BB80080CE0E /* UIColor+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DADE4E2B8E39DB0080CE0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DADE572B8E39DB0080CE0E /* YugiohTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DADE582B8E39DB0080CE0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DADE612B8E39DB0080CE0E /* YugiohUITests.swift in Sources */,
+				F0DADE632B8E39DB0080CE0E /* YugiohUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0DADE542B8E39DB0080CE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0DADE3B2B8E39DA0080CE0E /* Yugioh */;
+			targetProxy = F0DADE532B8E39DB0080CE0E /* PBXContainerItemProxy */;
+		};
+		F0DADE5E2B8E39DB0080CE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0DADE3B2B8E39DA0080CE0E /* Yugioh */;
+			targetProxy = F0DADE5D2B8E39DB0080CE0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0DADE9B2B8E3BB70080CE0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0DADE9C2B8E3BB70080CE0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0DADE642B8E39DB0080CE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0DADE652B8E39DB0080CE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0DADE672B8E39DB0080CE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yugioh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Yugioh;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Yugioh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0DADE682B8E39DB0080CE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yugioh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Yugioh;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Yugioh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0DADE6A2B8E39DB0080CE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YugiohTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yugioh.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yugioh";
+			};
+			name = Debug;
+		};
+		F0DADE6B2B8E39DB0080CE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YugiohTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yugioh.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yugioh";
+			};
+			name = Release;
+		};
+		F0DADE6D2B8E39DB0080CE0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YugiohUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yugioh;
+			};
+			name = Debug;
+		};
+		F0DADE6E2B8E39DB0080CE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YugiohUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yugioh;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0DADE372B8E39DA0080CE0E /* Build configuration list for PBXProject "Yugioh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DADE642B8E39DB0080CE0E /* Debug */,
+				F0DADE652B8E39DB0080CE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0DADE662B8E39DB0080CE0E /* Build configuration list for PBXNativeTarget "Yugioh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DADE672B8E39DB0080CE0E /* Debug */,
+				F0DADE682B8E39DB0080CE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0DADE692B8E39DB0080CE0E /* Build configuration list for PBXNativeTarget "YugiohTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DADE6A2B8E39DB0080CE0E /* Debug */,
+				F0DADE6B2B8E39DB0080CE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0DADE6C2B8E39DB0080CE0E /* Build configuration list for PBXNativeTarget "YugiohUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DADE6D2B8E39DB0080CE0E /* Debug */,
+				F0DADE6E2B8E39DB0080CE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0DADECE2B8E44150080CE0E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F0DADECF2B8E448C0080CE0E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		F0DADED22B8E44CE0080CE0E /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0DADED02B8E448C0080CE0E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0DADECF2B8E448C0080CE0E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F0DADED32B8E44CE0080CE0E /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0DADED22B8E44CE0080CE0E /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		F0DADED62B8E45060080CE0E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0DADECE2B8E44150080CE0E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F0DADE342B8E39DA0080CE0E /* Project object */;
+}
